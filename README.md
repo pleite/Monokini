@@ -1,10 +1,10 @@
-# Monokini — Parametric Cable-Channel System
+# Monokini — Parametric Cable-Channel System for openGrid
 
-**Monokini** is an [OpenSCAD](https://openscad.org/) parametric library for generating 3D-printable cable-management channels. Every part snaps together using the *Monokini* profile and is fully customisable through the built-in OpenSCAD Customizer.
+**Monokini** is an [OpenSCAD](https://openscad.org/) parametric library for generating 3D-printable cable-management channels. Every part uses the **openGrid** snap profile, making them fully compatible with [openGrid](https://www.printables.com/model/757405-opengrid) plates by **@David D**. All pieces are fully customisable through the built-in OpenSCAD Customizer.
 
-> Created by **Hands on Katie** and **BlackjackDuck (Andy)**  
-> Licensed under [Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
-> Full documentation: <https://handsonkatie.com/underware-2-0-the-made-to-measure-collection/>
+> Created by **pleite**  
+> Inspired by the Underware 2.0 collection by **Hands on Katie** and **BlackjackDuck (Andy)**  
+> Licensed under [Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
@@ -97,14 +97,14 @@ All files share a common set of parameter groups.
 
 ## Credits
 
-- **Katie** and her community at [Hands on Katie](https://www.youtube.com/@HandsOnKatie) (YouTube, Patreon, Discord)
-- **@David D** on Printables — Multiconnect
+- **pleite** — author of this project
+- **Katie** and her community at [Hands on Katie](https://www.youtube.com/@HandsOnKatie) (YouTube, Patreon, Discord) — inspiration
+- **@David D** on Printables — [openGrid](https://www.printables.com/model/757405-opengrid)
 - **Jonathan** at Keep Making — Multiboard
 - **@cosmicdust** (MakerWorld) / **@freakadings_1408562** (Printables) — diagonal and turn concepts
 - **@siyrahfall+1155967** on Printables — top exit holes concept
 - **@Lyric** on Printables — flush connector concept
 - **@fawix** on GitHub — parameter descriptor contributions
-- **PedroL** — initial implementation of the Monokini profile
 - **@BlackjackDuck** on Printables — original profiles and channel concept
 
 ---

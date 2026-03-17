@@ -1,7 +1,6 @@
-/*Created by Hands on Katie and BlackjackDuck (Andy)
+/*Created by pleite
+Inspired by the Underware 2.0 collection by Hands on Katie and BlackjackDuck (Andy)
 This code and all parts derived from it are Licensed Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)
-
-Documentation available at https://handsonkatie.com/underware-2-0-the-made-to-measure-collection/
 
 Change Log:
 - 2024-12-06 
@@ -15,14 +14,13 @@ Change Log:
 
 
 Credit to 
-    First and foremost - Katie and her community at Hands on Katie on Youtube, Patreon, and Discord
-    @David D on Printables for Multiconnect
+    Katie and her community at Hands on Katie on Youtube, Patreon, and Discord for the inspiration
+    @David D on Printables for openGrid
     Jonathan at Keep Making for Multiboard
     @cosmicdust on MakerWorld and @freakadings_1408562 on Printables for the idea of diagonals (forward and turn)
     @siyrahfall+1155967 on Printables for the idea of top exit holes
     @Lyric on Printables for the flush connector idea
     @fawix on GitHub for her contributions on parameter descriptors
-    PedroL on initial implementation of the monokini profile
     @BlackjackDuck on Printables for the original profiles and the idea of a channel
 
 
@@ -64,7 +62,7 @@ Shift_Cutouts_Forward_or_Back = 0;
 //Labels (1) only work on MakerWorld, (2) must be exported as 3MF, and (3) must be imported into slicer as project (not geometry).
 Add_Label = false;
 //Text to appear on label
-Text = "Hands on Katie";  // Text to be displayed
+Text = "My Label";  // Text to be displayed
 // Adjust the X axis position of the text
 Text_x_coordinate = 0; 
 //Depth of text (in mm). Increments of 0.2 to match layer heights. 
@@ -100,7 +98,7 @@ Channel_Separators = ""; //
 /*[Hidden]*/
 //Units of measurement (in mm) for hole and length spacing. Multiboard is 25mm. Untested
 Grid_Size = 28;
-channelWidthSeparation = 0.8; //distance between the two channels in the monokini profile
+channelWidthSeparation = 0.8; //distance between the two channels in the openGrid profile
 channelWidth = (Grid_Size-channelWidthSeparation*2) + (Channel_Width_in_Units-1) * Grid_Size;
 curveWidth = Channel_Width_in_Units * Grid_Size;
 lengthMM = L_Channel_Length_in_Units_Y_Axis * Grid_Size;
@@ -492,7 +490,7 @@ module monokiniGripFlaredCut(widthMM = 26.4, heightMM = 22, flareAngle = 0) {
 */
     pathChannel = list_rotate(list_insert(list_insert(arc(90, r = (addedRadius*Grid_Size) + widthMM/2, angle = [180,90], endpoint= true), 0, [-widthMM/2-(addedRadius*Grid_Size),-channelWidthSeparation-Nudge]), 0, [channelWidthSeparation+Nudge,widthMM/2+(addedRadius*Grid_Size)]));
 /*    
-    roff_Profile = offset(monokiniProfile, delta=-snapWallThickness, check_valid=true); //create the monokini profile
+    roff_Profile = offset(monokiniProfile, delta=-snapWallThickness, check_valid=true); //create the openGrid profile
     point1 = select(monokiniProfile, 0); //get the first point of the profile
     point2 = select(roff_Profile, 0); //get the first point of the offset profile
     point3 = select(roff_Profile, -1); //get the last point of the offset profile

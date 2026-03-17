@@ -1,7 +1,6 @@
-/*Created by Hands on Katie and BlackjackDuck (Andy)
+/*Created by pleite
+Inspired by the Underware 2.0 collection by Hands on Katie and BlackjackDuck (Andy)
 This code and all parts derived from it are Licensed Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)
-
-Documentation available at https://handsonkatie.com/underware-2-0-the-made-to-measure-collection/
 
 Change Log:
 - 2024-12-06 
@@ -15,14 +14,13 @@ Change Log:
 
 
 Credit to 
-    First and foremost - Katie and her community at Hands on Katie on Youtube, Patreon, and Discord
-    @David D on Printables for Multiconnect
+    Katie and her community at Hands on Katie on Youtube, Patreon, and Discord for the inspiration
+    @David D on Printables for openGrid
     Jonathan at Keep Making for Multiboard
     @cosmicdust on MakerWorld and @freakadings_1408562 on Printables for the idea of diagonals (forward and turn)
     @siyrahfall+1155967 on Printables for the idea of top exit holes
     @Lyric on Printables for the flush connector idea
     @fawix on GitHub for her contributions on parameter descriptors
-    PedroL on initial implementation of the monokini profile
     @BlackjackDuck on Printables for the original profiles and the idea of a channel
 
 
@@ -65,7 +63,7 @@ Shift_Cutouts_Forward_or_Back = 0;
 //Labels (1) only work on MakerWorld, (2) must be exported as 3MF, and (3) must be imported into slicer as project (not geometry).
 Add_Label = false;
 //Text to appear on label
-Text = "Hands on Katie";  // Text to be displayed
+Text = "My Label";  // Text to be displayed
 // Adjust the X axis position of the text
 Text_x_coordinate = 0; 
 //Depth of text (in mm). Increments of 0.2 to match layer heights. 
@@ -99,7 +97,7 @@ Grip_Flare = 0; // [0:0.1:15]
 /*[Hidden]*/
 //Units of measurement (in mm) for hole and length spacing. Multiboard is 25mm. Untested
 Grid_Size = 28;
-channelWidthSeparation = 0.8; //distance between the two channels in the monokini profile
+channelWidthSeparation = 0.8; //distance between the two channels in the openGrid profile
 channelWidth = (Grid_Size-channelWidthSeparation*2) + (Channel_Width_in_Units-1) * Grid_Size;
 lengthMM = Channel_Length_Units * Grid_Size * ( Half_Bridge ? 2 : 1);
 baseHeight = 3.40;
@@ -254,7 +252,7 @@ module monokiniHeightChangeChannel(lengthMM = 28, widthMM = 26.4, heightMM1 = 22
             [widthMM/2, off1+heightMM1-baseHeight]
         ];
     
-    Aroff_Profile = offset(deduplicate(AmonokiniProfile), delta=-snapWallThickness, check_valid=true); //create the monokini profile
+    Aroff_Profile = offset(deduplicate(AmonokiniProfile), delta=-snapWallThickness, check_valid=true); //create the openGrid profile
     Apoint1 = select(AmonokiniProfile, 0); //get the first point of the profile
     Apoint2 = select(Aroff_Profile, 0); //get the first point of the offset profile
     Apoint3 = select(Aroff_Profile, -1); //get the last point of the offset profile
@@ -276,7 +274,7 @@ module monokiniHeightChangeChannel(lengthMM = 28, widthMM = 26.4, heightMM1 = 22
             [widthMM/2, off2+heightMM2-baseHeight]
         ];
     
-    Broff_Profile = offset(deduplicate(BmonokiniProfile), delta=-snapWallThickness, check_valid=true); //create the monokini profile
+    Broff_Profile = offset(deduplicate(BmonokiniProfile), delta=-snapWallThickness, check_valid=true); //create the openGrid profile
     Bpoint1 = select(BmonokiniProfile, 0); //get the first point of the profile
     Bpoint2 = select(Broff_Profile, 0); //get the first point of the offset profile
     Bpoint3 = select(Broff_Profile, -1); //get the last point of the offset profile
@@ -434,7 +432,7 @@ module monokiniChannel(lengthMM = 28, widthMM = 26.4, heightMM = 22, anchor, spi
 
     pathChannel = [[0,0],[0,lengthMM-Nudge]];
  
-    roff_Profile = offset(deduplicate(monokiniProfile), delta=-snapWallThickness, check_valid=true); //create the monokini profile
+    roff_Profile = offset(deduplicate(monokiniProfile), delta=-snapWallThickness, check_valid=true); //create the openGrid profile
     point1 = select(monokiniProfile, 0); //get the first point of the profile
     point2 = select(roff_Profile, 0); //get the first point of the offset profile
     point3 = select(roff_Profile, -1); //get the last point of the offset profile
