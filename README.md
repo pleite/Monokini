@@ -1,6 +1,6 @@
-# Monokini — Parametric Cable-Channel System for openGrid
+# Monokini — Customizable Underware for openGrid
 
-**Monokini** is an [OpenSCAD](https://openscad.org/) parametric library for generating 3D-printable cable-management channels. Every part uses the **openGrid** snap profile, making them fully compatible with [openGrid](https://www.printables.com/model/757405-opengrid) plates by **@David D**. All pieces are fully customisable through the built-in OpenSCAD Customizer.
+**Monokini** is the customizable Underware for the openGrid profile — an [OpenSCAD](https://openscad.org/) parametric library for generating 3D-printable cable-management channels fully compatible with [openGrid](https://www.printables.com/model/757405-opengrid) plates by **@David D**. All pieces are fully customisable through the built-in OpenSCAD Customizer.
 
 > Created by **Pedro Leite**  
 > Inspired by the Underware 2.0 collection by **Hands on Katie** and **BlackjackDuck (Andy)**  
@@ -98,7 +98,7 @@ All files share a common set of parameter groups.
 
 ## Credits
 
-- **Pedro Leite** — author of this project and initial implementation of the openGrid profile
+- **Pedro Leite** — author of Monokini, the customizable Underware for openGrid profile
 - **Katie** and her community at [Hands on Katie](https://www.youtube.com/@HandsOnKatie) (YouTube, Patreon, Discord) — inspiration
 - **@David D** on Printables — [openGrid](https://www.printables.com/model/757405-opengrid)
 - **Jonathan** at Keep Making — Multiboard

@@ -23,7 +23,7 @@ Credit to
     @siyrahfall+1155967 on Printables for the idea of top exit holes
     @Lyric on Printables for the flush connector idea
     @fawix on GitHub for her contributions on parameter descriptors
-    Pedro Leite on initial implementation of the openGrid profile
+    Pedro Leite on Monokini, the customizable Underware for openGrid profile
     @BlackjackDuck on Printables for the original profiles and the idea of a channel
 
 
