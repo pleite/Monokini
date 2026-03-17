@@ -2,9 +2,10 @@
 
 **Monokini** is an [OpenSCAD](https://openscad.org/) parametric library for generating 3D-printable cable-management channels. Every part uses the **openGrid** snap profile, making them fully compatible with [openGrid](https://www.printables.com/model/757405-opengrid) plates by **@David D**. All pieces are fully customisable through the built-in OpenSCAD Customizer.
 
-> Created by **pleite**  
+> Created by **Pedro Leite**  
 > Inspired by the Underware 2.0 collection by **Hands on Katie** and **BlackjackDuck (Andy)**  
-> Licensed under [Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+> Licensed under [Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
+> Original Underware 2.0 documentation: <https://handsonkatie.com/underware-2-0-the-made-to-measure-collection/>
 
 ---
 
@@ -97,7 +98,7 @@ All files share a common set of parameter groups.
 
 ## Credits
 
-- **pleite** — author of this project
+- **Pedro Leite** — author of this project and initial implementation of the openGrid profile
 - **Katie** and her community at [Hands on Katie](https://www.youtube.com/@HandsOnKatie) (YouTube, Patreon, Discord) — inspiration
 - **@David D** on Printables — [openGrid](https://www.printables.com/model/757405-opengrid)
 - **Jonathan** at Keep Making — Multiboard

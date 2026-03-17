@@ -1,6 +1,8 @@
-/*Created by pleite
+/*Created by Pedro Leite
 Inspired by the Underware 2.0 collection by Hands on Katie and BlackjackDuck (Andy)
 This code and all parts derived from it are Licensed Creative Commons 4.0 Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)
+
+Documentation available at https://handsonkatie.com/underware-2-0-the-made-to-measure-collection/
 
 Change Log:
 - 2024-12-06 
@@ -21,6 +23,7 @@ Credit to
     @siyrahfall+1155967 on Printables for the idea of top exit holes
     @Lyric on Printables for the flush connector idea
     @fawix on GitHub for her contributions on parameter descriptors
+    Pedro Leite on initial implementation of the openGrid profile
     @BlackjackDuck on Printables for the original profiles and the idea of a channel
 
 
@@ -64,7 +67,7 @@ Shift_Cutouts_Forward_or_Back = 0;
 //Labels (1) only work on MakerWorld, (2) must be exported as 3MF, and (3) must be imported into slicer as project (not geometry).
 Add_Label = false;
 //Text to appear on label
-Text = "My Label";  // Text to be displayed
+Text = "Hands on Katie";  // Text to be displayed
 // Adjust the X axis position of the text
 Text_x_coordinate = 0; 
 //Depth of text (in mm). Increments of 0.2 to match layer heights. 
