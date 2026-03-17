@@ -22,7 +22,7 @@ Credit to
     @siyrahfall+1155967 on Printables for the idea of top exit holes
     @Lyric on Printables for the flush connector idea
     @fawix on GitHub for her contributions on parameter descriptors
-    PedroL on inital implementation of the monokini profile
+    PedroL on initial implementation of the monokini profile
     @BlackjackDuck on Printables for the original profiles and the idea of a channel
 
 
@@ -55,7 +55,7 @@ Number_of_Cord_Cutouts = 0;
 Cord_Side_Cutouts = "Both Sides"; //[Left Side, Right Side, Both Sides, None, Left Side Top, Right Side Top]
 //Width of each cord cutout (in mm)
 Cord_Cutout_Width = 12;
-// in mm
+//Distance between cord cutouts (in mm)
 Distance_Between_Cutouts = 28;
 //Distance (in mm) to offset cutouts along Y axis. Forward is positive, back is negative
 Shift_Cutouts_Forward_or_Back = 0;
@@ -71,7 +71,7 @@ Text_x_coordinate = 0;
 Text_Depth = 0.2; // [0:0.2:1] 
 //Font must be installed on local machine if using local OpenSCAD
 Font = "Raleway"; // [Asap, Bangers, Changa One, Chewy, Harmony OS Sans,Inter,Inter Tight,Lora,Merriweather Sans,Montserrat,Noto Emoji,Noto Sans,Noto Sans Adlam,Noto Sans Adlam Unjoined,Noto Sans Arabic,Noto Sans Arabic UI,Noto Sans Armenian,Noto Sans Balinese,Noto Sans Bamum,Noto Sans Bassa Vah,Noto Sans Bengali,Noto Sans Bengali UI,Noto Sans Canadian Aboriginal,Noto Sans Cham,Noto Sans Cherokee,Noto Sans Devanagari,Noto Sans Display,Noto Sans Ethiopic,Noto Sans Georgian,Noto Sans Gujarati,Noto Sans Gunjala Gondi,Noto Sans Gurmukhi,Noto Sans Gurmukhi UI,Noto Sans HK,Noto Sans Hanifi Rohingya,Noto Sans Hebrew,Noto Sans JP,Noto Sans Javanese,Noto Sans KR,Noto Sans Kannada,Noto Sans Kannada UI,Noto Sans Kawi,Noto Sans Kayah Li,Noto Sans Khmer,Noto Sans Khmer UI,Noto Sans Lao,Noto Sans Lao Looped,Noto Sans Lao UI,Noto Sans Lisu,Noto Sans Malayalam,Noto Sans Malayalam UI,Noto Sans Medefaidrin,Noto Sans Meetei Mayek,Noto Sans Mono,Noto Sans Myanmar,Noto Sans NKo Unjoined,Noto Sans Nag Mundari,Noto Sans New Tai Lue,Noto Sans Ol Chiki,Noto Sans Oriya,Noto Sans SC,Noto Sans Sinhala,Noto Sans Sinhala UI,Noto Sans Sora Sompeng,Noto Sans Sundanese,Noto Sans Symbols,Noto Sans Syriac,Noto Sans Syriac Eastern,Noto Sans TC,Noto Sans Tai Tham,Noto Sans Tamil,Noto Sans Tamil UI,Noto Sans Tangsa,Noto Sans Telugu,Noto Sans Telugu UI,Noto Sans Thaana,Noto Sans Thai,Noto Sans Thai UI,Noto Sans Vithkuqi,Nunito,Nunito Sans,Open Sans,Open Sans Condensed,Oswald,Playfair Display,Plus Jakarta Sans,Raleway,Roboto,Roboto Condensed,Roboto Flex,Roboto Mono,Roboto Serif,Roboto Slab,Rubik,Source Sans 3,Ubuntu Sans,Ubuntu Sans Mono,Work Sans]
-//Styling of selecte font. Note that not all fonts support all styles. 
+//Styling of selected font. Note that not all fonts support all styles. 
 Font_Style = "Regular"; // [Regular,Bold,Medium,SemiBold,Light,ExtraBold,Black,ExtraLight,Thin,Bold Italic,Italic,Light Italic,Medium Italic]
 Text_size = 10;    // Font size
 //Color of label text (color names found at https://en.wikipedia.org/wiki/Web_colors)
@@ -83,7 +83,7 @@ Text_Emboss = false; // [true, false]
 /*[Advanced Options]*/
 //Color of part (color names found at https://en.wikipedia.org/wiki/Web_colors)
 Global_Color = "SlateBlue";
-//Supression string Key: N - None, L - Left suppressed, R - Right suppressed, B - Both suppressed. With multiple channels, separate them with comma.
+//Suppression string Key: N - None, L - Left suppressed, R - Right suppressed, B - Both suppressed. With multiple channels, separate them with comma.
 Suppress_Connectors = ""; // 
 // Decorative option
 Decorative = false; // [true, false] - If true, the profile will be decorative and not functional. This is useful for creating a decorative channel without the need for connectors or cutouts.
